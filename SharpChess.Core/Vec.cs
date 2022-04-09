@@ -1,5 +1,4 @@
-﻿global using static SharpChess.Core.Vec;
-
+﻿
 
 namespace SharpChess.Core;
 

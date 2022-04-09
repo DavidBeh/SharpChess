@@ -1,75 +1,113 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="SharpChess.Core.Move.ChessEffect" Collapsed="true">
-    <Position X="18" Y="2.25" Width="1.5" />
+    <Position X="22" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Class Name="SharpChess.Core.Move.ChessEffect.Death" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Move\ChessEffect.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="SharpChess.Core.Move.ChessEffect.Move" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Move\ChessEffect.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="SharpChess.Core.Move.ChessEffect.Promotion" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Move\ChessEffect.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Move\ChessEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SharpChess.Core.Move.ChessMove">
-    <Position X="13.25" Y="2.25" Width="1.5" />
+    <Position X="10.75" Y="1" Width="3" />
     <TypeIdentifier>
       <HashCode>AgAAAAAAAAAAAAAAAAQAAAAAAAAIAAAAAAAAAAAAQAA=</HashCode>
       <FileName>Move\ChessMove.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SharpChess.Core.Move.GenericMove">
-    <Position X="13.25" Y="5.5" Width="1.5" />
+    <Position X="11.25" Y="6" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Move\Moves.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="SharpChess.Core.Move.PromotionMove" Collapsed="true">
-    <Position X="15.5" Y="5.5" Width="1.5" />
+  <Class Name="SharpChess.Core.Move.PromotionMove">
+    <Position X="14.5" Y="4.25" Width="4.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Move\Moves.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SharpChess.Core.Move.ReadyPromotionMove">
-    <Position X="11" Y="5.5" Width="1.5" />
+  <Class Name="SharpChess.Core.Move.ReadyChessMovePromotionMove">
+    <Position X="5.25" Y="6" Width="5.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>Move\Moves.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="SharpChess.Core.ChessGame" Collapsed="true">
-    <Position X="19.75" Y="2.25" Width="1.5" />
+  <Class Name="SharpChess.Core.Move.ReadyChessMove">
+    <Position X="8.25" Y="4.25" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ChessGame.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Move\ReadyChessMove.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SharpChess.Core.FieldData" Collapsed="true">
-    <Position X="18" Y="3.25" Width="1.5" />
+  <Class Name="SharpChess.Core.Board&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.25" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAFAAAAAAAAAAAAA=</HashCode>
-      <FileName>FieldData.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAEAAGAAAAAAIAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Boards.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.303" Collapsed="true" />
+  </Class>
+  <Class Name="SharpChess.Core.ChessGame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAgBAAEAACAAAAAAAAAAAAAAAAAAAAAwAAAA=</HashCode>
+      <FileName>ChessGame.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SharpChess.Core.ChessFieldExtensions" Collapsed="true">
+    <Position X="23.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Fields.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SharpChess.Core.Vec" Collapsed="true">
-    <Position X="19.75" Y="3.25" Width="1.5" />
+    <Position X="22" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAYAEAAABgAAAAAAAAAAAAAAAAYAA=</HashCode>
       <FileName>Vec.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="SharpChess.Core.Move.Ready" Collapsed="true">
-    <Position X="18" Y="4.5" Width="1.5" />
+  <Interface Name="SharpChess.Core.IReadOnlyBoard&lt;T&gt;" Collapsed="true">
+    <Position X="20.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Move\Ready.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAAAgAABA=</HashCode>
+      <FileName>Boards.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="SharpChess.Core.PieceType" Collapsed="true">
-    <Position X="18" Y="5.5" Width="1.5" />
+    <Position X="20.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAEAAggAAAAAAAAAQAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>PieceType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SharpChess.Core.Player" Collapsed="true">
+    <Position X="22" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

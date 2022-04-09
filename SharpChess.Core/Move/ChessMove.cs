@@ -3,9 +3,9 @@
 /// <summary>
 /// An Possible Move
 /// </summary>
-public abstract class ChessInput
+public abstract class ChessMove
 {
-    public ChessInput(Vec from, Vec to)
+    public ChessMove(Vec from, Vec to)
     {
         From = from;
         To = to;
@@ -15,6 +15,6 @@ public abstract class ChessInput
     public readonly Vec To;
 
     public IReadOnlyList<ChessEffect> Effects => _effects.AsReadOnly();
-    private List<ChessEffect> _effects = new();
-
+    internal List<ChessEffect> _effects = new();
 }
+

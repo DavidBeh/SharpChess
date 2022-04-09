@@ -1,6 +1,6 @@
 ﻿namespace SharpChess.Core;
 
-public enum ChessPieceId
+public enum PieceType
 {
     /// <summary>
     /// König

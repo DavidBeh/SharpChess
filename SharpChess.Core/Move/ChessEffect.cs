@@ -1,8 +1,8 @@
-﻿namespace SharpChess.Core.Input;
+﻿namespace SharpChess.Core.Move;
 
-public class ChessEvent
+public class ChessEffect
 {
-    public class Death : ChessEvent
+    public class Death : ChessEffect
     {
         public readonly Vec Pos;
 
@@ -12,7 +12,7 @@ public class ChessEvent
         }
     }
 
-    public class Move : ChessEvent
+    public class Move : ChessEffect
     {
         public readonly Vec From;
         public readonly Vec To;
@@ -24,12 +24,12 @@ public class ChessEvent
         }
     }
 
-    public class Promotion : ChessEvent
+    public class Promotion : ChessEffect
     {
         public readonly Vec Pos;
-        public readonly ChessPieceId NewPiece;
+        public readonly PieceType NewPiece;
 
-        public Promotion(Vec pos, ChessPieceId newPiece)
+        public Promotion(Vec pos, PieceType newPiece)
         {
             Pos = pos;
             NewPiece = newPiece;
