@@ -16,5 +16,8 @@ public abstract class ChessMove
 
     public IReadOnlyList<ChessEffect> Effects => _effects.AsReadOnly();
     internal List<ChessEffect> _effects = new();
+    
+    
+    
 }
 

@@ -17,9 +17,9 @@ public class ChessEffect
         public readonly Vec From;
         public readonly Vec To;
 
-        public Move(Vec @from, Vec to)
+        public Move(Vec from, Vec to)
         {
-            From = @from;
+            From = from;
             To = to;
         }
     }
@@ -31,6 +31,8 @@ public class ChessEffect
 
         public Promotion(Vec pos, PieceType newPiece)
         {
+            List<string> l;
+
             Pos = pos;
             NewPiece = newPiece;
         }

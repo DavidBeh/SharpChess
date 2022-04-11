@@ -10,7 +10,7 @@
 /// </summary>
 public class ReadyChessMove : ChessMove
 {
-    public ReadyChessMove(Vec @from, Vec to) : base(@from, to)
+    public ReadyChessMove(Vec from, Vec to) : base(from, to)
     {
     }
 }

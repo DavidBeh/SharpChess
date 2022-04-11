@@ -4,14 +4,14 @@ namespace SharpChess.Core.Move;
 
 public class GenericMove : ReadyChessMove
 {
-    public GenericMove(Vec @from, Vec to) : base(@from, to)
+    public GenericMove(Vec from, Vec to) : base(from, to)
     {
     }
 }
 
 public class PromotionMove : ChessMove
 {
-    public PromotionMove(Vec @from, Vec to) : base(@from, to)
+    public PromotionMove(Vec from, Vec to) : base(from, to)
     {
         
     }
