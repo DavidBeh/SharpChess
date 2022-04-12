@@ -7,7 +7,7 @@ namespace SharpChess.Core;
 /// Represents a field from a Chess<b>Board</b>.
 /// For information about a Chess<b>Game</b>s Field see <see cref="GameField"/>
 /// </summary>
-public record BoardField
+public class BoardField
 {
     public PieceType PieceType { get; init; }
     public Player Player { get; init; }
@@ -23,7 +23,7 @@ public record BoardField
 /// <summary>
 /// Represents a field from a Chess<b>Game</b>, not only a <b>Board</b>.
 /// </summary>
-public record GameField : BoardField
+public class GameField : BoardField
 {
     public Vector<int> Position { get; init; }
     public IReadOnlyList<ChessMove> Moves => _moves.AsReadOnly();

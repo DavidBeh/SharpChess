@@ -5,7 +5,7 @@ namespace SharpChess.Core;
 /// <summary>
 /// Vector class with immutable integer coordinates.
 /// </summary>
-public class Vec
+public sealed class Vec
 {
     public readonly int X;
     public readonly int Y;

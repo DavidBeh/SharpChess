@@ -31,41 +31,67 @@ public class GameController : ControllerBase
         int TotalGames,
         int ChatMessagesPerMinute
     );
+    
 
     /// <summary>
-    /// Get Current Board
+    /// Add Move
     /// </summary>
-    /// <param name="id"></param>
+    /// <param name="move"></param>
     /// <returns></returns>
-    [HttpGet("{id}/Board")]
-    [ProducesResponseType(typeof(IEnumerable<FieldData>),StatusCodes.Status200OK)]
-    public IActionResult GetBoard(string id)
-    {
-        return Ok();
-    }
-
-    [HttpPost("{id}/Board/Move")]
+    [HttpPost("{id}/Moves/")]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    public IActionResult AddMove(Movement move)
+    public IActionResult AddMove(Movement move, string id)
     {
         return Ok();
     }
-
-
 
 
     /// <summary>
-    /// Add move to board
+    /// Get Board
     /// </summary>
-    /// <param name="id">the id of the board</param>
-    /// <response code="200">Move added</response>
-    [ProducesResponseType(200)]
-    [HttpPost("Board/{id}")]
-    public IActionResult GetBoard(string id, Vec vec)
+    /// <param name="id">Id of the board</param>
+    [HttpGet("{id}/Board")]
+    [ProducesResponseType(typeof(BoardResponseData), 200)]
+    public IActionResult GetBoard(int id)
     {
         throw new NotImplementedException();
     }
 
+    /// <summary>
+    /// Revert last Move
+    /// </summary>
+    /// <param name="id">Id of the board</param>
+    [HttpDelete("{id}/Moves")]
+    [ProducesResponseType(typeof(BoardResponseData), 200)]
+    public IActionResult UndoMove(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    /// <summary>
+    /// Get Move history
+    /// </summary>
+    /// <param name="id">the id of the board</param>
+    /// <response code="200">Returns Moves of the board</response>
+    [ProducesResponseType(200)]
+    [HttpGet("{id}/Moves")]
+    public IActionResult GetBoard(string id)
+    {
+        throw new NotImplementedException();
+    }
+
+    
+    /// <summary>
+    /// Get possible moves
+    /// </summary>
+    /// <param name="id">the id of the board</param>
+    /// <response code="200">Returns Moves of the board</response>
+    [ProducesResponseType(200)]
+    [HttpGet("{id}/PossibleMove")]
+    public IActionResult GetPossibleMoves(string id)
+    {
+        throw new NotImplementedException();
+    }
 
     class BoardResponseData
     {
